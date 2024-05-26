@@ -1,0 +1,1 @@
+SELECT EmpId FROM EmployeeSalary WHERE NOT Project='P1';
