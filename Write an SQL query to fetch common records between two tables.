@@ -1,0 +1,13 @@
+SQL Server – Using INTERSECT operator-
+
+SELECT * FROM EmployeeSalary
+INTERSECT
+SELECT * FROM ManagerSalary;
+
+
+MySQL – Since MySQL doesn’t have INTERSECT operator so we can use the subquery-
+
+SELECT *
+FROM EmployeeSalary
+WHERE EmpId IN 
+(SELECT EmpId from ManagerSalary);
